@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Vaping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4c77af;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .section {
+            display: none; /* Ocultar todas las secciones por defecto */
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .active {
+            display: block; /* Mostrar solo la sección activa */
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+        #contador {
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        a {
+            color: #4c77af;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4c77af;
+            color: white;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #3a5a80;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Stop Vaping</h1>
+    <p>Learn from a new perspective.</p>
+</header>
+
+<nav role="navigation">
+    <a href="javascript:void(0);" onclick="showSection('seccion1')">Sección 1</a>
+    <a href="javascript:void(0);" onclick="showSection('seccion2')">Sección 2</a>
+    <a href="javascript:void(0);" onclick="showSection('seccion3')">Sección 3</a>
+    <a href="javascript:void(0);" onclick="showSection('seccion4')">Sección 4</a> <!-- Nueva Sección -->
+</nav>
+
+<main>
+       <div id="seccion1" class="section active">
+        <h2>Why we created the website?</h2>
+        <p>to inform about several perspectives over varied topics that in this case take over the issues of health and disease. We will go deeper into vape addiction so that our readers are able to understand the risks and consequences this devices have on our health. You can still se a video to understand why people vape, but further on we will explain and convince you why you shouldn't.</p>
+        <a href="https://www.youtube.com/watch?v=9dZS_Rniak0" target="_blank">Go to video</a>
+    </div>
+
+
+    <div id="seccion2" class="section">
+        <h2>More information</h2>
+       
+<p>What are addictions?</p>
+<p>Addictions are compulsive behaviors or dependencies that are hard to control, often leading to negative consequences. Vape addiction, in particular, involves depending on electronic cigarettes or vaping devices, usually due to the nicotine content there is inside it and the feeling people want to get from it. It’s growing in demand, especially among younger people, as vaping is often perceived as less harmful than smoking traditional cigarettes, but it can still lead to significant health risks and psychological dependence.</p>
+        <a href="https://www.youtube.com/watch?si=nplbEXsMk6BCV3Hd&v=6JsIJoC5EGE&feature=youtu.be" target="_blank">
+          check video 1.</a>
+          <p>Why are they caused?</p>
+          <p>To talk about addictions we need to understand their origins. 
+              Addictions are caused by a mix of biological, psychological, and environmental factors. Genetics can actually make someone more prone to addiction, while emotional issues and problems can take people to seek out substances as coping mechanisms in order to feel better or obtain a sense of freedom and peace. Environmental influences, such as family and friends' contact, also play a role. Over time, repeated use of substances such as the nicotine found in vapes can condition the brain to seek out that substance or  pleasure or relief..</p>
+          <a href="https://www.youtube.com/watch?si=DYyTPPse0zTWMwUG&v=HDfSx_Q7_Yk&feature=youtu.be" target="_blank">
+  check video 2.</a>
+          <p>Why people vape?</p>
+          <p> People vape for various reasons, including the variety of flavors they provide, the belief that it's a less harmful alternative to smoking, and the desire for a stress-relieving activity. Some use vaping as a tool to quit smoking traditional cigarettes, while others start to do it as it is “trending” among young people. However, despite these motivations, vaping still carries health risks, particularly due to nicotine addiction and other potentially harmful substances in this devices. We chose this topic as it is an increasing problem nowadays and people just let it be instead of doing something.</p>
+  <a href="https://www.youtube.com/watch?si=hB7lquiW9Fo_3snH&v=aasKIDz9ZX4&feature=youtu.be" target="_blank">
+ check video 3. </a>
+        </div>
+
+
+    <div id="seccion3" class="section">
+        <h2>Our perspectives</h2>
+        <p>In here you may find a link to see several perspectives both from experts and from us.</p>
+        <a href="https://drive.google.com/file/d/113CfjvVJHrppZwFSVPxNskFk6LMvL3jI/view?usp=sharing" target="_blank">Perspectives.</a>
+    </div>
+
+    <!-- Nueva Sección 4: Comentarios y Contacto -->
+    <div id="seccion4" class="section">
+        <h2>Share Your Comments</h2>
+        <p>We value your opinions! Please share your thoughts on this topic.</p>
+
+        <!-- Formulario para comentarios -->
+        <form id="comentariosForm">
+            <label for="nombre">Your Name:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="comentario">Your Comment:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+            <input type="submit" value="Submit Comment">
+        </form>
+
+        <h2>Contact Information</h2>
+        <p>If you need more information or help, feel free to reach out:</p>
+        <ul>
+            <li>Name: Miguel Angel Arce Reina Clinical Psychologist</li>
+            <li>Info Website: <a href="https://psicologosbogota.com/miguel-angel-arce-reina-psicologo-clinico">Psychologists in Bogota.</a></li>
+            <li>Phone of an expert: +57 320 5120 302</li>
+            <li>Address: Usaquen</li>
+           
+        </ul>
+    </div>
+
+    <div id="contador">
+        <p>You are visit number: <span id="contadorVisitas">0</span></p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 MbsInfo. All rights preserved.</p>
+</footer>
+
+<script>
+    // Función para mostrar la sección activa
+    function showSection(sectionId) {
+        document.querySelectorAll('.section').forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+
+    // Contador de visitas con localStorage
+    let visitas = localStorage.getItem('contadorVisitas');
+    if (!visitas) {
+        visitas = 0;
+    }
+    visitas++;
+    localStorage.setItem('contadorVisitas', visitas);
+    document.getElementById('contadorVisitas').textContent = visitas;
+
+    // Manejo del formulario de comentarios
+    document.getElementById('comentariosForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const nombre = document.getElementById('nombre').value;
+        const comentario = document.getElementById('comentario').value;
+
+        if (nombre && comentario) {
+            alert("Thank you for your comment, " + nombre + "!");
+            // Aquí podrías agregar lógica para guardar los comentarios en una base de datos o procesarlos de alguna forma
+            document.getElementById('comentariosForm').reset(); // Limpiar el formulario
+        }
+    });
+</script>
+
+</body>
+</html>
